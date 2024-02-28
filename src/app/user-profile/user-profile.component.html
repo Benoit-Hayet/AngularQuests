@@ -1,0 +1,11 @@
+<div id="container">
+    <form id="formulaire">
+      <img [src]="user.photo" alt="User Photo" />
+      <p>{{ user.age }}</p>
+      <p>Nom : {{ user.name }}</p>
+      <p>Prénom :{{ user.firstName }}</p>
+      <input type="text" [(ngModel)]="user.quote">
+      <button></button>
+    </form>
+  </div>
+  
