@@ -1,11 +1,9 @@
-<div id="container">
-    <form id="formulaire">
-      <img [src]="user.photo" alt="User Photo" />
-      <p>{{ user.age }}</p>
-      <p>Nom : {{ user.name }}</p>
-      <p>Prénom :{{ user.firstName }}</p>
-      <input type="text" [(ngModel)]="user.quote">
-      <button></button>
-    </form>
-  </div>
-  
+<div id="formulaire">
+  <img [src]="user.photo" alt="User Photo" />
+  <p><button (click)="showAge()">Afficher/Masquer age</button></p>
+  <p [hidden]="!showButton">{{ user.age }}</p>
+  <p>Nom : {{ user.name }}</p>
+  <p>Prénom : {{ user.firstName }}</p>
+  <input type="text" [(ngModel)]="user.quote">
+  <p>{{ user.quote }}</p>
+</div>
