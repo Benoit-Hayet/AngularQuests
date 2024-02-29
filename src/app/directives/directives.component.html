@@ -1,0 +1,5 @@
+<div id="directives">
+    <div><H1 [ngClass]="{titleInRed: !isAdmin}">Bonjour !</H1></div>
+    <button>View</button>
+    <button **ngIf="!isAdmin">Edit</button>
+</div>

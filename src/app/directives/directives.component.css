@@ -1,0 +1,10 @@
+#directives {
+    text-align: center;
+}
+#directives button {
+    display: inline-block;
+    margin: 5px;
+}
+.titleInRed {
+    color:red;
+}
